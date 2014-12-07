@@ -176,7 +176,7 @@ class PlayState extends FlxState
 			_txtTutorial.y -= 16;
 			_txtTutorial.x = Math.floor(_txtTutorial.x);
 			_txtTutorial.y = Math.floor(_txtTutorial.y);
-			_txtTutorial.text = "WELCOME! PRESS\n\nENTER TO SKIP THE\n\nTUTORIAL AT ANY\n\nTIME.";
+			_txtTutorial.text = "WELCOME! PRESS\n\nENTER TO SKIP THE\n\nTUTORIAL AT ANY\n\nTIME!";
 			_txtPressN = new FlxText(0, 0, 0, "PRESS N TO\n\nCONTINUE", 8);
 			_txtPressN.setFormat(AssetPaths.CoasterBoy__ttf, 8, 0xffd7e894, "left");
 			_txtPressN.screenCenter();
