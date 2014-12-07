@@ -357,8 +357,11 @@ class PlayState extends FlxState
 	
 	private function addEnemy(?num:Int = 1):Void {
 		if (_isTutorial) return;
+		if(level <= 50){
+			level++;
+		}
 		for (i in 0...num) {
-			var enemy:Enemy = new Enemy(0, 0, FlxRandom.chanceRoll(), FlxRandom.chanceRoll(), FlxRandom.chanceRoll(100 - level * 5));
+			var enemy:Enemy = new Enemy(0, 0, FlxRandom.chanceRoll(), FlxRandom.chanceRoll(), FlxRandom.chanceRoll(100 - level));
 			_grpEnemy.add(enemy);
 		}
 		
